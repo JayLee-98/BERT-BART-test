@@ -33,19 +33,19 @@ async def summarize(input_text: Request):
 그는 일본 언론과의 인터뷰에서 "예전에는 2000엔(약 1만8000원)짜리 셔츠밖에 못 입었는데, (오타니 닮은꼴로 유명해지면서부터)이제는 4만5000엔(약 40만원)짜리 'BOSS 셔츠'도 살 수 있게 됐다"며 '인생역전'을 실감한다고 전했다.
 """
     
-    # 요약 생성
-    # summary = summarizer(input_text, max_length=100, min_length=50, do_sample=True)
-    summary = summarizer(
-        input_text, 
-        max_length=100, 
-        min_length=50, 
-        do_sample=True,  # 샘플링 활성화
-        temperature=0.7,  # 다양성 조절
-        top_k=50,         # 상위 50개 단어 중 선택
-        top_p=0.9         # 누적 확률 0.9 이하의 단어만 선택
-    )
-    summary_text = summary[0]['summary_text']
-    
+    # # 요약 생성
+    summary = summarizer(input_text, max_length=120, min_length=50, do_sample=True)
+    # summary = summarizer(
+    #     input_text, 
+    #     max_length=100, 
+    #     min_length=50, 
+    #     do_sample=True,  # 샘플링 활성화
+    #     temperature=0.7,  # 다양성 조절
+    #     top_k=50,         # 상위 50개 단어 중 선택
+    #     top_p=0.9         # 누적 확률 0.9 이하의 단어만 선택
+    # )
+    # summary_text = summary[0]['summary_text']
+    # summary = summarizer(input_text, max_length=50)
     
     # 요약 결과 반환
-    return {"summary": summary_text}
+    return {"summary": summary}
