@@ -1,3 +1,4 @@
+# works magic !!! / sentence similarity search
 from fastapi import FastAPI
 from sentence_transformers import SentenceTransformer
 from sklearn.metrics.pairwise import cosine_similarity
@@ -11,7 +12,6 @@ model = SentenceTransformer('sentence-transformers/paraphrase-multilingual-MiniL
 @app.post("/sentenceSimilarity")
 async def sentence_similarity(source_sentence):
 
-    # source_sentence: """피고가 판결정본을 송달받지않아 10월 16일 공시송달 명령으로 10월 31일 도달로된 상태입니다 피고가 항소하지 않는다고 가정할때 저런 상태일때는 10월 31일 이후 2주 뒤에 11월14일이 되어야 이혼 처리를 할수있는건지 궁금합니다. """
     # source_sentence: """대통령실은 1일 더불어민주당이 전날 공개한 윤석열 대통령과 명태균 씨의 통화 녹음 내용에 대해 "윤 대통령은 취임 전후에 공천 개입, 선거 개입과 같은 불법 행위를 한 바가 없다"고 밝혔다."""
 
     # 기준 문장과 비교할 문장들

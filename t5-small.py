@@ -1,3 +1,5 @@
+# eng only
+
 from transformers import pipeline
 from fastapi import FastAPI, Request
 

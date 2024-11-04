@@ -1,3 +1,4 @@
+# not working
 
 # 요약 모델이 아닌 번역 작업에 특화되어있기때문에 별도의 파인튜닝이 필요함
 from fastapi import FastAPI, Request
