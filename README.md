@@ -1,4 +1,4 @@
-## BERT와 BART  
+## BERT와 BART   
 
 ### 1. BERT (Bidirectional Encoder Representations from Transformers)
 
