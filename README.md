@@ -1,6 +1,6 @@
 ## BERT와 BART    
 
-### 1. BERT (Bidirectional Encoder Representations from Transformers)
+### 1. BERT (Bidirectional Encoder Representations from Transformers) 
 
 #### 1.1 개요
 BERT는 NLP에서 대표적인 사전학습(pretrained) 모델로, **Transformer의 인코더** 부분을 기반으로 설계되었습니다. BERT의 핵심 혁신은 **양방향성(bidirectionality)** 입니다. 이 양방향 접근은 문장 내에서 단어의 앞뒤 문맥을 모두 고려하여 단어의 의미를 추론하는 것을 가능하게 합니다. BERT는 **Masked Language Modeling(MLM)**과 **Next Sentence Prediction(NSP)**을 학습 목표로 사용하여 강력한 문장 이해 능력을 갖추게 됩니다.
